@@ -1,0 +1,229 @@
+/* Polices et couleurs de base */
+:root {
+    --primary-color: #0066cc;
+    /* --primary-color: #00af2c; */
+    --secondary-color: #f8f9fa;
+    --dark-color: #343a40;
+    --light-color: #ffffff;
+    --link-color: #0066cc;
+    --hover-color: #004499;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fefefe;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1000px;
+}
+
+/* En-tête */
+header.bg-light {
+    background-color: var(--secondary-color) !important;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Barre de navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+    margin-right: 0.5rem;
+}
+
+.nav-link {
+    color: var(--light-color) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+    color: var(--hover-color) !important;
+}
+
+/* Image de profil */
+#profile-pic,
+header img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* Sections */
+section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--light-color);
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Liste des compétences */
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.list-unstyled li i {
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Pied de page */
+footer.bg-dark {
+    background-color: var(--dark-color) !important;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Responsive : ajustements pour petits écrans */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 0 0.3rem;
+    }
+
+    header.bg-light {
+        padding: 1.5rem 0;
+    }
+
+    #profile-pic,
+    header img {
+        width: 120px;
+    }
+
+    .project-card .img-fluid {
+        display: none;
+    }
+}
+
+/* Liens dans le texte */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Espacement des paragraphes */
+main p {
+    margin-bottom: 1.2rem;
+}
+
+/* Animation légère pour les boutons */
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* Bouton "Retour en haut" */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+#backToTopBtn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+#backToTopBtn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.image-container {
+    position: relative; /* Conteneur pour le positionnement absolu */
+    display: inline-block; /* Pour que la largeur s'adapte à l'image */
+}
+
+.image-source {
+    position: absolute;
+    bottom: 5px; /* Distance depuis le bas */
+    right: 5px; /* Distance depuis la droite */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 2px 5px;
+    font-size: 10px; /* Taille de police réduite */
+    color: #666; /* Couleur du texte */
+    border-radius: 3px; /* Coins arrondis */
+    text-align: right; /* Alignement du texte à droite */
+}
+
+.image-source a {
+    color: #666; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.image-source a:hover {
+    color: #0d6efd; /* Couleur au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
