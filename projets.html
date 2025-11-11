@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les projets de Florian Jacquot en Traitement Automatique des Langues (NLP/TAL). Explorez mes réalisations en modélisation de langage, analyse de sentiments, et plus encore.">
+    <meta name="keywords" content="projets NLP, TAL, Florian Jacquot, portfolio NLP, modélisation de langage, analyse de sentiments, chatbot, traduction automatique">
+    <title>Mes Projets - Florian Jacquot</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inclusion de la bar de navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- En-tête de la page -->
+    <header class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Mes Projets</h1>
+            <p class="lead">Découvrez mes réalisations en Traitement Automatique des Langues (NLP/TAL)</p>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Filtres par catégorie (optionnel) -->
+            <div class="mb-4">
+                <div class="bg-light p-3 rounded">
+                    <h4 class="mb-3"><i class="fas fa-filter me-2"></i>Filtres</h4>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="all" checked>
+                        <label class="form-check-label" for="all">Tous</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="nlp">
+                        <label class="form-check-label" for="nlp">LLM</label>
+                    </div>
+                    <!-- <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="chatbot">
+                        <label class="form-check-label" for="chatbot">Chatbots</label>
+                    </div> -->
+                    <!-- <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="data">
+                        <label class="form-check-label" for="data">Analyse de Données</label>
+                    </div> -->
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="data">
+                        <label class="form-check-label" for="data">Analyse linguistique</label>
+                    </div>
+                    <!-- <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="data">
+                        <label class="form-check-label" for="data">Traitement de la Parole</label>
+                    </div> -->
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="filter" id="data">
+                        <label class="form-check-label" for="data">Application</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liste des projets -->
+            <div class="">
+                <!-- Projet : Détection de fake news -->
+                <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="img/sticky-notes-with-fake-news.jpg" class="img-fluid rounded-start object-fit-contain" alt="Fake or real?" title="Fake or Real?">
+                                <div class="image-source">
+                                    Designed by <a href="http://www.freepik.com/" target="_blank" rel="noopener">Freepik</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Détection de Fake News avec CLIMATE-FEVER</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2024 |
+                                        <i class="fas fa-tools me-2"></i>Python, Hugging Face, Phi-3
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Développement d'un modèle de <strong>prédiction de véracité</strong> basé sur des preuves textuelles,
+                                    en utilisant le corpus <strong><a href="https://arxiv.org/abs/2012.00614">CLIMATE-FEVER</a></strong>. Le projet inclut :
+                                </p>
+                                <ul>
+                                    <li>Prétraitements des données</li>
+                                    <li>Prompt engineering</li>
+                                    <li>Zero shot prompting</li>
+                                    <li>Fine-tuning du modèle Phi-3 pour de l'inférence textuelle</li>
+                                    <li>Évaluation des performances avec des métriques précises (Macro F1-score, précision et rappel)</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <!-- <a href="https://github.com/ton-profil/projet-fake-news" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a> -->
+                                    <span class="badge bg-primary">LLM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : Application Quizlang -->
+                <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="img/projet-quizlang-illustration.jpg" class="img-fluid rounded-start object-fit-contain" alt="Application Quizlang - Apprentissage des langues" title="Source : vectorjuice / Freepik">
+                                <div class="image-source">
+                                    Designed by vectorjuice/<a href="http://www.freepik.com/" target="_blank" rel="noopener">Freepik</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Quizlang - Application d'aide à l'apprentissage des langues</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2023 - 2024 |
+                                        <i class="fas fa-tools me-2"></i>Java, POO, Gestion de fichiers
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Application développée dans le cadre d'un cours de <strong>Programmation Objet</strong> du Master TAL (Inalco).
+                                    Quizlang permet aux <strong>apprenants</strong> de progresser en langues et aux <strong>professeurs</strong> de créer des exercices personnalisés.
+                                </p>
+                                <!-- <ul>
+                                    <li><strong>Système d'inscription/connexion</strong> pour apprenants et professeurs.</li>
+                                    <li><strong>Gestion des niveaux</strong> (Débutant, Intermédiaire, Avancé) avec progression automatique.</li>
+                                    <li><strong>Correction automatique</strong> des exercices avec notation adaptée au niveau.</li>
+                                    <li><strong>Interface professeur</strong> pour ajouter/supprimer des exercices.</li>
+                                    <li>Stockage des données dans des fichiers <code>.txt</code>.</li>
+                                </ul> -->
+                                <div class="mt-3">
+                                    <h5 class="mb-2"><i class="fas fa-users me-2"></i>Fonctionnalités par rôle :</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-chalkboard-teacher me-2"></i>Professeurs</h6>
+                                            <ul>
+                                                <li>Création d'exercices.</li>
+                                                <li>Visualisation des exercices existants.</li>
+                                                <li>Définition des notes seuils pour la réussite.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6><i class="fas fa-user-graduate me-2"></i>Apprenants</h6>
+                                            <ul>
+                                                <li>Accès aux exercices adaptés à leur niveau.</li>
+                                                <li>Correction instantanée et mise à jour du score.</li>
+                                                <li>Passage automatique de niveau (ex: Débutant → Intermédiaire).</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/FlorianJacquot/inalco-quizlang-app.git" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Application d'apprentissage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : Étude de la vie multilingue du mot Féminisme -->
+                <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="img/concept-de-feminisme-moderne-avec-un-design-plat.jpg" class="img-fluid rounded-start object-fit-contain" alt="Vie multilingue du mot Féminisme" title="Source : Freepik">
+                                <div class="image-source">
+                                    Designed by <a href="http://www.freepik.com/" target="_blank" rel="noopener">Freepik</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Étude de la vie multilingue d'un mot</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2023 |
+                                        <i class="fas fa-tools me-2"></i>Bash, HTML, CSS, iTrameur
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Étude de la vie multilingue du mot "féminisme" via une analyse semi-automatique des contextes dans lesquels le mot est utilisé dans chacune des langues étudiées. Le corpus d'étude se constitue d'articles journalistiques contenant le mot "féminisme" en français, "페미" (<i>femi</i>) en coréen, "feminismo" en portugais et "フェミニズム" (<i>feminizumu</i>) en japonais. Le projet inclus :
+                                </p>
+                                <ul>
+                                    <li>Identification d'articles journalistiques contenant le mot étudié dans les quatre langues</li>
+                                    <li>Extraction des occurences du mot avec leur contexte d'utilisation</li>
+                                    <li>Création d'un concordancier</li>
+                                    <li>Analyse et présentation des résultats dans un <a href="https://agathewallet.github.io/Projet_PPE1_Feminisme/index.html">site web</a></li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/FlorianJacquot/inalco-m1s1-projet-personnel-encadre-feminisme.git" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Analyse linguistique</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : Dictionnaire plurilingue chinois, coréen, japonais -->
+                <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="img/chinese-dictionary.jpg" class="img-fluid rounded-start object-fit-contain" alt="Dictionnaire chinois coréen japonais" title="d">
+                                <div class="image-source">
+                                    Designed by <a href="http://www.freepik.com/" target="_blank" rel="noopener">Freepik</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Dictionnaire plurilingue chinois, coréen, japonais</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2024 |
+                                        <i class="fas fa-tools me-2"></i>FastAPI, HTML, CSS, JavaScript,jQuery
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Création d'un dictionnaire plurilingue qui permet à l'utilisateur d'entrer un caractère, un mot ou une phrase en chinois (classique ou simplifié) pour obtenir la signification chinoise, japonaise et coréenne, avec une traduction en anglais et/ou français. L'objectif est de saisir les subtilités de l'utilisation des caractères chinois dans ces trois langues. Le projet inclus :
+                                </p>
+                                <div class="mt-3">
+                                    <h5 class="mb-2"><i class="fas fa-users me-2"></i>Fonctionnalités :</h5>
+                                    <!-- <div class="row"> -->
+                                        <div class="card-body">
+                                            <h6><i class="fas fa-chalkboard-teacher me-2"></i>Interface</h6>
+                                            <ul>
+                                                <li>Une barre de recherche permettant à l'utilisateur de saisir facilement un caractère, un mot ou une phrase en chinois</li>
+                                                <li>Une page <code>Home</code> affichant les résultats de la recherche, triés par langue (chinois, japonais, coréen) et par type de résultat (caractère, mot). Pour chaque résultat, sont indiqués son écriture dans sa langue, sa prononciation (en pinyin, hiragana ou hangŭl), ainsi que sa traduction en français et en anglais.</li>
+                                                <li>Un tutoriel expliquant de manière détaillée comment utiliser l'application et présentant les différentes fonctionnalités. Il présente également des exemples cliquables permettant de tester les fonctionnalités du site, même pour les personnes ne connaissant pas le chinois.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6><i class="fas fa-user-graduate me-2"></i>Serveur</h6>
+                                            <ul>
+                                                <li><code>FastAPI</code> pour créer l'API de l'application et gérer les requêtes HTTP entrantes et sortantes</li>
+                                                <li><code>requests</code> pour les requêtes HTTP vers l'API externe de <a href="https://koreanhanja.app/">koreanhanja.app</a></li>
+                                                <li><code>Pandas</code> pour la manipulation des données</li>
+                                                <li><code>re</code> (expressions régulières) pour la vérification de la validité des caractères chinois saisis par l'utilisateur et pour extraire les informations pertinentes des résultats de la recherche sur koreanhanja.app</li>
+                                                <li><code>HanziConv</code> pour la conversion entre les caractères chinois simplifiés et traditionnels</li>
+                                                <li><code>Jieba</code> pour la segmentation des phrases/mots en chinois entrés par l'utilisateur</li>
+                                                <li>Bases de données au format tsv conçues à partir des dictionnaires suivants :
+                                                    <ul>
+                                                        <li>CFDICT, Base de données "chinois - français"</li>
+                                                        <li>CC-DICT, Base de données "chinois - anglais"</li>
+                                                        <li>JMdict-EDICT, Base de données "japonais - anglais / français / allemand / russe / espagnol / hongrois / slovène / néerlandais"</li>
+                                                    </ul>
+                                            </ul>
+                                        </div>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/FlorianJacquot/inalco-m2s2-superapplication.git" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Application linguistique</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : Chatbot multilingue -->
+                <!-- <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/projet-chatbot.jpg" class="img-fluid rounded-start h-100" alt="Projet Chatbot Multilingue">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Chatbot Multilingue pour le Support Client</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2023 |
+                                        <i class="fas fa-tools me-2"></i>Python, Rasa, TensorFlow
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Conception d'un <strong>chatbot multilingue</strong> (français, anglais, espagnol) pour répondre aux questions fréquentes des clients.
+                                    Fonctionnalités clés :
+                                </p>
+                                <ul>
+                                    <li>Intégration de modèles de langage multilingues (mBERT).</li>
+                                    <li>Gestion des intentions (intents) et entités avec Rasa.</li>
+                                    <li>Déploiement sur une API REST avec FastAPI.</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/ton-profil/projet-chatbot" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Chatbot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Projet 3 : Analyse de sentiments -->
+                <!-- <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/projet-sentiments.jpg" class="img-fluid rounded-start h-100" alt="Projet Analyse de Sentiments">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Analyse de Sentiments sur les Réseaux Sociaux</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2022 |
+                                        <i class="fas fa-tools me-2"></i>Python, spaCy, Scikit-learn
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Analyse des sentiments sur des tweets en temps réel, avec :
+                                </p>
+                                <ul>
+                                    <li>Collecte de données via l'API Twitter.</li>
+                                    <li>Prétraitement des tweets (nettoyage, tokenisation).</li>
+                                    <li>Entraînement d'un classificateur de sentiments (SVM, Random Forest).</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/ton-profil/projet-sentiments" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Analyse de Données</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Projet 4 : Traduction automatique -->
+                <!-- <div class="project-card card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/projet-traduction.jpg" class="img-fluid rounded-start h-100" alt="Projet Traduction Automatique">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Système de Traduction Automatique Français-Japonais</h3>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar-alt me-2"></i>2021 - 2022 |
+                                        <i class="fas fa-tools me-2"></i>Python, Transformers, Hugging Face
+                                    </small>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Projet de traduction automatique spécialisé pour le couple de langues <strong>français-japonais</strong>,
+                                    en utilisant des architectures Transformer. Points clés :
+                                </p>
+                                <ul>
+                                    <li>Prétraitement des données parallèles (corpus TED Talks).</li>
+                                    <li>Fine-tuning d'un modèle MarianMT.</li>
+                                    <li>Évaluation avec BLEU et METEOR.</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://github.com/ton-profil/projet-traduction" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>Voir le code
+                                    </a>
+                                    <span class="badge bg-primary">Modélisation NLP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusion du bouton "Retour en haut" -->
+    <button id="backToTopBtn" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JS et dépendances -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts personnalisés -->
+    <script src="js/include-html.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/project-filter.js"></script>
+
+</body>
+</html>
